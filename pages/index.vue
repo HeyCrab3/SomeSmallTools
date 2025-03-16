@@ -36,7 +36,7 @@ const listItem = [
     },
     {
         title: '给我们在 Github 上一个 Star',
-        goto: 'https://github.com/HeyCrab3/BankCardPlayingTools'
+        goto: 'https://github.com/HeyCrab3/SomeSmallTools'
     },
 ]
 
