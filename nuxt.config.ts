@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  modules: ['@element-plus/nuxt'],
+  modules: ['@element-plus/nuxt', '@vant/nuxt'],
   css: ['~/assets/css/main.css'],
   devServer: {
     port: 7000
@@ -18,5 +18,8 @@ export default defineNuxtConfig({
     public: {
       openai_key: process.env.ALIYUN_APP_KEY
     }
+  },
+  app: {
+    baseURL: '/tools/'
   }
 })

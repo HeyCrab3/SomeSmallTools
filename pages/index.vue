@@ -9,7 +9,7 @@
                     justifyContent: 'space-between',
                 }">
                     <span :style="{ display: 'flex', alignItems: 'center', color: '#1D2129' }">
-                        <el-typography-text>{{ item.title }}</el-typography-text>
+                        <span>{{ item.title }}</span>
                     </span>
                     <el-link type="primary" @click="go(item.goto)">进入<el-icon><ArrowRight /></el-icon></el-link>
                 </div>
@@ -31,11 +31,19 @@ const listItem = [
         goto: '/fanfic'
     },
     {
+        title: 'AI 续写',
+        goto: '/continue'
+    },
+    {
+        title: 'AI 润色',
+        goto: '/polish'
+    },
+    {
         title: '加入我们的QQ群',
         goto: 'https://qm.qq.com/q/lUashgU3qa'
     },
     {
-        title: '给我们在 Github 上一个 Star',
+        title: '在GitHub上查看项目',
         goto: 'https://github.com/HeyCrab3/SomeSmallTools'
     },
 ]
